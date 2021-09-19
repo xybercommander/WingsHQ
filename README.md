@@ -14,8 +14,8 @@
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
  ## For Project Presentation(website) [Click here](https://www.canva.com/design/DAEWXuZbgso/wnP-OGnqvIoSmDAucfQ_1A/view?website#2)
- For Project Presentation(gdrive) : [Click Here]()<br>
- For Project Demo Video(youtube) : [Click Here]()
+ For Project Presentation(gdrive) : [Click Here](https://www.canva.com/design/DAEqKRVNTMY/RUSJoVA1FRhoSDs_YChhYg/view)<br>
+ For Project Demo Video(youtube) : [Click Here](https://www.youtube.com/watch?v=ijN5DhGQ61w&ab_channel=SamratMukherjee)
 
 <h2 align="center" id="content"> 🗂 CONTENT:</h2>
 
@@ -81,7 +81,7 @@ WingsHQ is a mobile Application made using Flutter to create a community driven 
    
    :point_right: Extensive Search: With the search feature, a user can find a group which they want to join in. Based on groups the results will be shown and they can join the group in just one click. <br/>
    :point_right: BMI Calculator: Based on the height and weight of the user, the BMI calculator feature calculates the BMI of a person. This helps him to know that if he is underweight or overweight or normal. <br/>
-   :point_right: Meditation Timer:   <br/>
+   :point_right: Meditation Timer: For medidation  <br/>
    :point_right:Razorpay integration: - Razorpay integration to help doctors monitarily for their service.<br/>
 <i><p align="center"><a href="#content">⬆️ BACK TO CONTENT</a></p></i><br>
 
@@ -259,12 +259,19 @@ Then add a title and description to your pull request that explains your preciou
 <!-- |||
 |---|---|
 
-| -->
-|<h3 align="center">Home Page</h3><img width="200" alt="Profile" src="">||
+|
 <h3 align="center">Login</h3><img width="200" alt="Login" src="https://user-images.githubusercontent.com/71402528/133919311-a288709f-49f0-4967-bc51-83eee0412de9.png"> <h3 align="center">Create Account</h3><img width="200" alt="Create Account" src="https://user-images.githubusercontent.com/38849650/133930083-34ad8349-3c5f-4122-beec-1583e3aa270d.PNG">|
- <h3 align="center">Timeline</h3><img width="200" alt="Timeline" src="https://user-images.githubusercontent.com/71402528/133919331-f787d0b7-393f-48ac-80bc-8d5e23e6d6be.png"> <h3 align="center">Chat</h3><img width="200" alt="Chat" src="https://user-images.githubusercontent.com/38849650/133930094-7f953fdd-53e5-4934-9b09-645718bad13c.PNG"!>|
+ <h3 align="center">Timeline</h3><img width="200" alt="Timeline" src="https://user-images.githubusercontent.com/71402528/133919331-f787d0b7-393f-48ac-80bc-8d5e23e6d6be.png">|
+ <h3 align="center">Chat</h3><img width="200" alt="Chat" src="https://user-images.githubusercontent.com/38849650/133930094-7f953fdd-53e5-4934-9b09-645718bad13c.PNG"!>|
 <h3 align="center">Groups</h3><img width="200" alt="Search" src="https://user-images.githubusercontent.com/71402528/133919450-661b442e-149b-4e0b-8fca-a44a69b08ed6.png">
-|<h3 align="center">Search</h3><img width="200" alt="Search" src="">|
+|<h3 align="center">Search</h3><img width="200" alt="Search" src="">| -->
+
+
+<h3 align="center">Login</h3><img width="200" alt="Login" src="https://user-images.githubusercontent.com/71402528/133919311-a288709f-49f0-4967-bc51-83eee0412de9.png">
+<h3 align="center">Create Account</h3><img width="200" alt="Create Account" src="https://user-images.githubusercontent.com/38849650/133930083-34ad8349-3c5f-4122-beec-1583e3aa270d.PNG">
+<h3 align="center">Timeline</h3><img width="200" alt="Timeline" src="https://user-images.githubusercontent.com/71402528/133919331-f787d0b7-393f-48ac-80bc-8d5e23e6d6be.png">
+<h3 align="center">Chat</h3><img width="200" alt="Chat" src="https://user-images.githubusercontent.com/38849650/133930094-7f953fdd-53e5-4934-9b09-645718bad13c.PNG">
+<h3 align="center">Search</h3><img width="200" alt="Search" src="https://user-images.githubusercontent.com/71402528/133930472-d2537088-597a-43dc-b81c-4a51f453bcd8.png">
 
 
 <i><p align="center"><a href="#content">⬆️ BACK TO CONTENT</a></p></i><br>
@@ -273,12 +280,15 @@ Then add a title and description to your pull request that explains your preciou
 
 |<h2> 1️⃣ AUTOMATION : Perform Tasks In Background</h2>|
 |---|
-|🔘To generate notifications **` build a notify system`**|
-|🔘 Make a special notification system which **`instant active for all the mermbers`**|
-|🔘 **`Make `** payment gateway|
-|🔘 **` User friendly`** sorting and filtering e|
-|🔘 **`Build a Voice-chat option`** int the chat section|
-|🔘 Need a **`fully functioning`** Machine Learning **`Handwriting to text translator`**|
+|:radio_button:To generate notifications  build a notify system|
+|:radio_button: Make a special notification system which instantly shows new news and group chats|
+|:radio_button:  User friendly filtering of health news and public groups|
+|:radio_button:  Share Personal Health Progress to different public groups and health Professionals|
+|:radio_button: Auto-generation  of health professionals' written prescription|
+|:radio_button:  User friendly sorting and filtering e|
+|:radio_button: Build a Voice-chat and Video option in the chat section|
+|:radio_button: Need a fully functioning Machine Learning Handwriting to text translator|
+|:radio_button: Need a fully functioning Machine Learning Model to ban toxic people in the community|
 
 <i><p align="center"><a href="#content">⬆️ BACK TO CONTENT</a></p></i><br>
 <br>
