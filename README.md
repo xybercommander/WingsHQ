@@ -107,7 +107,7 @@ You can refer to the following articles on the basics of Git and Github and also
 
 ### 1️⃣ Install The Apk into your Android Phone
 
-You can download the apk from google drive and install the app by clicking <a href="">here</a>
+You can download the apk from google drive and install the app by clicking <a href="https://drive.google.com/file/d/1lHiOwz95WwrkV7GB7cfqZtZQa7tYYsU1/view?usp=sharing">here</a>
 
 <br>
 
