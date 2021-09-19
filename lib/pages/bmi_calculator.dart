@@ -1,5 +1,5 @@
-// @dart=2.9
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class BmiCalculator extends StatefulWidget {
