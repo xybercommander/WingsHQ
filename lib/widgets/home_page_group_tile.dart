@@ -65,7 +65,7 @@ class _HomePageGroupTileState extends State<HomePageGroupTile> {
       //   Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage(groupId: groupId, userName: userName, groupName: groupName,)));
       // },
       child: Container(
-        height: 100,
+        height: 120,
         width: 200,
         margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
         padding: EdgeInsets.only(top: 16, left: 16, right: 16),
@@ -81,7 +81,7 @@ class _HomePageGroupTileState extends State<HomePageGroupTile> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CircleAvatar(
-                  radius: 30.0,
+                  radius: 28.0,
                   backgroundColor: Color(0xffc0e0ec),
                   child: Text(widget.groupName.substring(0, 1).toUpperCase(), textAlign: TextAlign.center, style: TextStyle(color: Colors.grey[800], fontSize: 24)),
                 ),
@@ -133,7 +133,7 @@ class _HomePageGroupTileState extends State<HomePageGroupTile> {
               ],
             ),
             SizedBox(height: 8,),
-            Text(widget.groupName, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 22)),
+            Text(widget.groupName, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 18)),
             SizedBox(height: 2,),
             Text(
               widget.groupDescription ?? '', 

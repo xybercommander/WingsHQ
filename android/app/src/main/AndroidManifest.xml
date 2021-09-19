@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wings_hq">
    <application
-        android:label="wings_hq"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Wings HQ"
+        android:icon="@mipmap/wingshq_logo">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

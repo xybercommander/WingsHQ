@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               flex: 1,
               child: SizedBox(
-                height: 200,
+                height: 100,
                 child: StreamBuilder(
                   stream: DatabaseService().getRecentGroupsCreated(),
                   builder: (context, snapshot) {
@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 16, top: 4),
+              padding: const EdgeInsets.only(left: 16),
               child: Text('Health News', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),),
             ),
             Expanded(
