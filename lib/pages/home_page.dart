@@ -1,5 +1,5 @@
 // @dart=2.9
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -7,8 +7,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:wings_hq/helper/helper_functions.dart';
 import 'package:wings_hq/services/database_service.dart';
+import 'package:wings_hq/services/health_news_api.dart';
 import 'package:wings_hq/widgets/home_page_group_tile.dart';
 
 class HomePage extends StatefulWidget {
@@ -135,10 +137,25 @@ class _HomePageState extends State<HomePage> {
               //                     snapshot.data[index]['title'],
               //                     style: TextStyle(color: Colors.white, fontSize: 18),
               //                   ),
-              //                   SizedBox(height: 4,),
-              //                   Text(
-              //                     'Source: ${snapshot.data[index]['source']['name']}',
-              //                     style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
+              //                   SizedBox(height: 4,),                                
+              //                   Row(
+              //                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //                     crossAxisAlignment: CrossAxisAlignment.center,
+              //                     children: [
+              //                       Text(
+              //                         'Source: ${snapshot.data[index]['source']['name']}',
+              //                         style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
+              //                       ),
+              //                       GestureDetector(
+              //                         onTap: () {
+              //                           launch(snapshot.data[index]['url']);
+              //                         },
+              //                         child: Text(
+              //                           'See more',
+              //                           style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+              //                         ),
+              //                       ),
+              //                     ],
               //                   ),
               //                 ],
               //               ),
@@ -174,8 +191,7 @@ class _HomePageState extends State<HomePage> {
                       height: 300,
                       width: 200,
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          // ignore: prefer_const_literals_to_create_immutables
+                        gradient: LinearGradient(                          
                           colors: [
                             Colors.transparent,
                             Colors.black
@@ -187,17 +203,31 @@ class _HomePageState extends State<HomePage> {
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        // ignore: prefer_const_literals_to_create_immutables
+                        crossAxisAlignment: CrossAxisAlignment.start,                        
                         children: [
                           Text(
                             'Georgia Gov. Brian Kemp keeps mentioning failed AIDS vaccine mandates. But there is no AIDS vaccine',
                             style: TextStyle(color: Colors.white, fontSize: 18),
                           ),
                           SizedBox(height: 4,),
-                          Text(
-                            'Source: Salon',
-                            style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Source: Salon',
+                                style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  print('Redirect');
+                                },
+                                child: Text(
+                                  'See more',
+                                  style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
