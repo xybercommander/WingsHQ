@@ -1,9 +1,7 @@
 // @dart=2.9
 import 'package:flutter/material.dart';
-import 'package:hackmit/helper/helper_functions.dart';
-import 'package:hackmit/pages/authenticate_page.dart';
-import 'package:hackmit/pages/home_page.dart';
-import 'package:hackmit/pages/splashscreen.dart';
+import 'package:wings_hq/helper/helper_functions.dart';
+import 'package:wings_hq/pages/splashscreen.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
