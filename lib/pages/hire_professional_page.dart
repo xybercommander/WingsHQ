@@ -1,10 +1,11 @@
+// @dart=2.9
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hackmit/helper/helper_functions.dart';
-import 'package:hackmit/pages/private_chat/private_chat.dart';
-import 'package:hackmit/services/database_service.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:wings_hq/helper/helper_functions.dart';
+import 'package:wings_hq/pages/private_chat/private_chat.dart';
+import 'package:wings_hq/services/database_service.dart';
 
 class HireProfessionalPage extends StatefulWidget {
   final String name;
@@ -46,12 +47,12 @@ class _HireProfessionalPageState extends State<HireProfessionalPage> {
     print('Payment is Successful');
     print('PAYMENT ID -----> ' + response.paymentId.toString());
 
-    Fluttertoast.showToast(
-      msg: 'Payment was successful! :D',
-      textColor: Colors.black,
-      fontSize: 16,
-      backgroundColor: Colors.grey[300]      
-    );
+    // Fluttertoast.showToast(
+    //   msg: 'Payment was successful! :D',
+    //   textColor: Colors.black,
+    //   fontSize: 16,
+    //   backgroundColor: Colors.grey[300]      
+    // );
 
     Future.delayed(Duration(seconds: 2), () {
       // directing to private chat room
@@ -71,12 +72,12 @@ class _HireProfessionalPageState extends State<HireProfessionalPage> {
     print('Payment Error');
     print('PAYMENT ERROR -----> ' + response.message.toString());
 
-    Fluttertoast.showToast(
-      msg: 'Payment was not successful :(',
-      textColor: Colors.black,
-      fontSize: 16,
-      backgroundColor: Colors.grey[300]      
-    );
+    // Fluttertoast.showToast(
+    //   msg: 'Payment was not successful :(',
+    //   textColor: Colors.black,
+    //   fontSize: 16,
+    //   backgroundColor: Colors.grey[300]      
+    // );
   }
 
   void _handleExternalWallet(ExternalWalletResponse response) {

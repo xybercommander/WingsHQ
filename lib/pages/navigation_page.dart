@@ -1,16 +1,17 @@
+// @dart=2.9
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:hackmit/helper/helper_functions.dart';
-import 'package:hackmit/pages/authenticate_page.dart';
-import 'package:hackmit/pages/bmi_calculator.dart';
-import 'package:hackmit/pages/groups_page.dart';
-import 'package:hackmit/pages/home_page.dart';
-import 'package:hackmit/pages/private_chat/chatroom_list.dart';
-import 'package:hackmit/pages/professionals_page.dart';
-import 'package:hackmit/pages/profile_page.dart';
-import 'package:hackmit/pages/search_page.dart';
-import 'package:hackmit/pages/timer_main.dart';
-import 'package:hackmit/services/auth_service.dart';
+import 'package:wings_hq/helper/helper_functions.dart';
+import 'package:wings_hq/pages/authenticate_page.dart';
+import 'package:wings_hq/pages/bmi_calculator.dart';
+import 'package:wings_hq/pages/groups_page.dart';
+import 'package:wings_hq/pages/home_page.dart';
+import 'package:wings_hq/pages/private_chat/chatroom_list.dart';
+import 'package:wings_hq/pages/professionals_page.dart';
+import 'package:wings_hq/pages/profile_page.dart';
+import 'package:wings_hq/pages/search_page.dart';
+import 'package:wings_hq/pages/timer_main.dart';
+import 'package:wings_hq/services/auth_service.dart';
 
 class NavigationPage extends StatefulWidget {
   const NavigationPage({ Key key }) : super(key: key);

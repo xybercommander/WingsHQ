@@ -1,7 +1,6 @@
+// @dart=2.9
 import 'package:flutter/material.dart';
-import 'package:hackmit/pages/authenticate_page.dart';
-import 'package:hackmit/pages/home_page.dart';
-import 'package:hackmit/services/auth_service.dart';
+import 'package:wings_hq/services/auth_service.dart';
 
 class ProfilePage extends StatelessWidget {
 

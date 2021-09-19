@@ -1,13 +1,15 @@
+// @dart=2.9
+// ignore_for_file: prefer_const_constructors
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
-import 'package:hackmit/helper/helper_functions.dart';
-import 'package:hackmit/services/database_service.dart';
-import 'package:hackmit/services/health_news_api.dart';
-import 'package:hackmit/widgets/home_page_group_tile.dart';
+import 'package:wings_hq/helper/helper_functions.dart';
+import 'package:wings_hq/services/database_service.dart';
+import 'package:wings_hq/widgets/home_page_group_tile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({ Key key }) : super(key: key);
@@ -172,6 +174,7 @@ class _HomePageState extends State<HomePage> {
                       width: 200,
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
+                          // ignore: prefer_const_literals_to_create_immutables
                           colors: [
                             Colors.transparent,
                             Colors.black
@@ -184,6 +187,7 @@ class _HomePageState extends State<HomePage> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.start,
+                        // ignore: prefer_const_literals_to_create_immutables
                         children: [
                           Text(
                             'Georgia Gov. Brian Kemp keeps mentioning failed AIDS vaccine mandates. But there is no AIDS vaccine',

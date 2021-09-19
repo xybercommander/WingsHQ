@@ -1,8 +1,9 @@
+// @dart=2.9
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hackmit/services/database_service.dart';
-import 'package:hackmit/widgets/professional_tile.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
+import 'package:wings_hq/services/database_service.dart';
+import 'package:wings_hq/widgets/professional_tile.dart';
 
 class ProfessionalsPage extends StatefulWidget {
   const ProfessionalsPage({ Key key }) : super(key: key);
