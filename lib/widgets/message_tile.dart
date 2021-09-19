@@ -20,12 +20,10 @@ class _MessageTileState extends State<MessageTile> {
 
   bool isMsgUrl = false;
   checkIfMessageIsUrl() {
-    if(widget.message.length >= 4) {
-      if(widget.message.substring(0, 4) == 'http' || widget.message.substring(0, 5) == 'https') {
-        setState(() {
-          isMsgUrl = true;
-        });
-      }
+    if(widget.message.length >= 4 && (widget.message.substring(0, 4) == 'http' || widget.message.substring(0, 5) == 'https')) {
+      setState(() {
+        isMsgUrl = true;
+      });
     }
   }
 
