@@ -113,7 +113,7 @@ class _TimerPageState extends State<TimerPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(      
       backgroundColor: Color(0xfff1efe5),
       //backgroundColor: Color(0xFF111111),
       body: Column(
@@ -168,7 +168,7 @@ class _TimerPageState extends State<TimerPage> {
 
           // Spacing
           SizedBox(
-            height: 36,
+            height: 24,
           ),
 
           // Timer Start/Stop Button
