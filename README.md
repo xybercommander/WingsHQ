@@ -61,13 +61,13 @@ WingsHQ is a mobile Application made using Flutter to create a community driven 
 
   #### Main Features
   
-   :point_right: Community Groups - Anyone can share their problems, their stories, take help from the community and live a healthy life. The group chat features allows multiple users to join multiple groups at the same time. Everytime a new group is made, the person who made the group becomes Admin. The most important thing to preserve a person's privacy is a proper way of commmunication. So We have introduced an [end-to-end encrypted chat system (AES)](https://user-images.githubusercontent.com/38849650/108539385-f0fbda00-7305-11eb-9680-5300a842dfb9.png) which takes care if all messages are encrypted.
+   :point_right: Community Groups - Anyone can share their problems, their stories, take help from the community and live a healthy life. The group chat features allows multiple users to join multiple groups at the same time. Every time a new group is made, the person who made the group becomes Admin. The most important thing to preserve a person's privacy is a proper way of communication. So We have introduced an [end-to-end encrypted chat system (AES)](https://user-images.githubusercontent.com/38849650/108539385-f0fbda00-7305-11eb-9680-5300a842dfb9.png) which takes care if all messages are encrypted.
    <br>
    
    :point_right: Healthcare Professional Page- A separate page has been introduced which shows a user the list of professional doctors and surgeons who are available and can help them with professional advice. <br/>
-    <ul>:point_right:  Timeline Page- The Home Page/Timeline Page of the app is divied into two sections
+    <ul>:point_right:  Timeline Page- The Home Page/Timeline Page of the app is divided into two sections
        <li> New Groups- This container fetches all the newly formed groups and adds that to the listview using horizontal scroll<br/>
-       <li> Health News- The Health News Section cooperates with gnews.io (public api) api to fetchand gather all the health related news and shows that to the user. A "see more" feature is also added to <br/>
+       <li> Health News- The Health News Section cooperates with gnews.io (public api) api to fetch and gather all the health related news and shows that to the user. A "see more" feature is also added to <br/>
   
    </ul>
      
@@ -192,14 +192,14 @@ Once you have completed these steps, you are ready to start contributing by chec
 
 ### 6️⃣ Create a new branch :bangbang:
 
-Whenever you are going to make contribution. Please create seperate branch using command and keep your `master` branch clean (i.e. synced with remote branch).
+Whenever you are going to make contribution. Please create separate branch using command and keep your `master` branch clean (i.e. synced with remote branch).
 
 ```sh
 # It will create a new branch with name Branch_Name and switch to branch Folder_Name
 $ git checkout -b Folder_Name
 ```
 
-Create a seperate branch for contibution and try to use same name of branch as of folder.
+Create a separate branch for contribution and try to use same name of branch as of folder.
 
 To switch to desired branch
 
@@ -215,7 +215,7 @@ To add the changes to the branch. Use
 $ git add .
 ```
 
-Type in a message relevant for the code reveiwer using
+Type in a message relevant for the code reviewer using
 
 ```sh
 # This message get associated with all files you have changed
