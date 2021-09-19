@@ -260,11 +260,11 @@ Then add a title and description to your pull request that explains your preciou
 |---|---|
 
 | -->
+|<h3 align="center">Home Page</h3><img width="200" alt="Profile" src="">||
 <h3 align="center">Login</h3><img width="200" alt="Login" src="https://user-images.githubusercontent.com/71402528/133919311-a288709f-49f0-4967-bc51-83eee0412de9.png"> <h3 align="center">Create Account</h3><img width="200" alt="Create Account" src="https://user-images.githubusercontent.com/38849650/133930083-34ad8349-3c5f-4122-beec-1583e3aa270d.PNG">|
  <h3 align="center">Timeline</h3><img width="200" alt="Timeline" src="https://user-images.githubusercontent.com/71402528/133919331-f787d0b7-393f-48ac-80bc-8d5e23e6d6be.png"> <h3 align="center">Chat</h3><img width="200" alt="Chat" src="https://user-images.githubusercontent.com/38849650/133930094-7f953fdd-53e5-4934-9b09-645718bad13c.PNG"!>|
 <h3 align="center">Groups</h3><img width="200" alt="Search" src="https://user-images.githubusercontent.com/71402528/133919450-661b442e-149b-4e0b-8fca-a44a69b08ed6.png">
 |<h3 align="center">Search</h3><img width="200" alt="Search" src="">|
-|<h3 align="center">Profile</h3><img width="200" alt="Profile" src="">||
 
 
 <i><p align="center"><a href="#content">⬆️ BACK TO CONTENT</a></p></i><br>
