@@ -13,7 +13,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
- ## For Project Presentation(website) [Click here](https://www.canva.com/design/DAEqKRVNTMY/RUSJoVA1FRhoSDs_YChhYg/view)<br>
+ ## For Project Presentation(website) [Click here](https://www.canva.com/design/DAEqKRVNTMY/RUSJoVA1FRhoSDs_YChhYg/view?website#2:flying-towards-a-more-connected-future)<br>
  For Project Demo Video(youtube) : [Click Here](https://www.youtube.com/watch?v=ijN5DhGQ61w&ab_channel=SamratMukherjee)
 
 <h2 align="center" id="content"> 🗂 CONTENT:</h2>
