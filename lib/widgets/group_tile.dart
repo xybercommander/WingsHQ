@@ -1,6 +1,6 @@
 // @dart=2.9
 import 'package:flutter/material.dart';
-import 'package:hackmit/pages/chat_page.dart';
+import 'package:wings_hq/pages/chat_page.dart';
 
 class GroupTile extends StatelessWidget {
   final String userName;

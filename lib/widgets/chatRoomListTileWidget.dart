@@ -1,11 +1,15 @@
+// @dart=2.9
+// ignore_for_file: prefer_const_constructors, file_names
+
 import 'package:flutter/material.dart';
-import 'package:hackmit/helper/helper_functions.dart';
-import 'package:hackmit/pages/private_chat/private_chat.dart';
+import 'package:wings_hq/helper/helper_functions.dart';
+import 'package:wings_hq/pages/private_chat/private_chat.dart';
 
 // Chat room list tile widget
 class ChatRoomListTile extends StatefulWidget {
   final String chatRoomId;
   final String lastMessage;
+  // ignore: prefer_const_constructors_in_immutables, use_key_in_widget_constructors
   ChatRoomListTile(this.chatRoomId, this.lastMessage);
   @override
   _ChatRoomListTileState createState() => _ChatRoomListTileState();

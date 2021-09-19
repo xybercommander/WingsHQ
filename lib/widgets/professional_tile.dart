@@ -1,5 +1,6 @@
+// @dart=2.9
 import 'package:flutter/material.dart';
-import 'package:hackmit/pages/hire_professional_page.dart';
+import 'package:wings_hq/pages/hire_professional_page.dart';
 
 class ProfessionalTile extends StatelessWidget {
   final String fullName;

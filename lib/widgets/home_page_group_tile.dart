@@ -1,9 +1,8 @@
 // @dart=2.9
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:hackmit/helper/helper_functions.dart';
-import 'package:hackmit/pages/chat_page.dart';
-import 'package:hackmit/services/database_service.dart';
+import 'package:wings_hq/pages/chat_page.dart';
+import 'package:wings_hq/services/database_service.dart';
 
 class HomePageGroupTile extends StatefulWidget {
   final String groupId;
