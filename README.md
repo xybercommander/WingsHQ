@@ -57,6 +57,7 @@ WingsHQ is a mobile Application made using Flutter to create a community driven 
 + Flutter +
 + Firestore +
 + Gnews[dot]io Public Api +
++ Razorpay Payment Gateway +
 ```
 </h2>
 
