@@ -95,7 +95,8 @@ class _NavigationPageState extends State<NavigationPage> {
             )
         ],       
       ),
-      drawer: Drawer(        
+      drawer: Drawer(  
+              
         child: ListView(
           padding: EdgeInsets.symmetric(vertical: 50.0),
           children: <Widget>[

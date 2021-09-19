@@ -51,7 +51,7 @@ class _GroupsPageState extends State<GroupsPage> {
           SizedBox(height: 20.0),
           Text(
             "You've not joined any group, tap on the 'add' icon to create a group or search for groups by tapping on the search button below.",
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.grey[600]),
           ),
         ],
       )

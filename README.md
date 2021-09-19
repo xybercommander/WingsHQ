@@ -77,11 +77,11 @@ WingsHQ is a mobile Application made using Flutter to create a community driven 
      
   #### Additional Features
   
-   :point_right:Payment- .<br/>
-   :point_right: Personalized Timeline - <br/>
-   :point_right: - <br/>
-   :point_right: Extensive Search - With the extensive search option a customer can search for their desires,anything they wish for. <br/>
-
+   
+   :point_right: Extensive Search: With the search feature, a user can find a group which they want to join in. Based on groups the results will be shown and they can join the group in just one click. <br/>
+   :point_right: BMI Calculator: Based on the height and weight of the user, the BMI calculator feature calculates the BMI of a person. This helps him to know that if he is underweight or overweight or normal. <br/>
+   :point_right: Meditation Timer:   <br/>
+   :point_right:Razorpay integration: - Razorpay integration to help doctors monitarily for their service.<br/>
 <i><p align="center"><a href="#content">⬆️ BACK TO CONTENT</a></p></i><br>
 
 <br>
