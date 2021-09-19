@@ -1,5 +1,8 @@
 // @dart=2.9
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MessageTile extends StatefulWidget {
 
@@ -14,6 +17,24 @@ class MessageTile extends StatefulWidget {
 }
 
 class _MessageTileState extends State<MessageTile> {
+
+  bool isMsgUrl = false;
+  checkIfMessageIsUrl() {
+    if(widget.message.length >= 4) {
+      if(widget.message.substring(0, 4) == 'http' || widget.message.substring(0, 5) == 'https') {
+        setState(() {
+          isMsgUrl = true;
+        });
+      }
+    }
+  }
+
+  @override
+  void initState() {    
+    super.initState();
+    checkIfMessageIsUrl();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -57,12 +78,19 @@ class _MessageTileState extends State<MessageTile> {
               )
             ),
             SizedBox(height: 7.0),
-            Text(
-              widget.message, 
-              textAlign: TextAlign.start, 
-              style: TextStyle(
-                fontSize: 15.0, color: widget.sentByMe ? Colors.black : Colors.black
-              )
+            GestureDetector(
+              onTap: () {
+                if(isMsgUrl) {
+                  launch(widget.message);
+                }
+              },
+              child: Text(
+                widget.message, 
+                textAlign: TextAlign.start, 
+                style: TextStyle(
+                  fontSize: 15.0, color: isMsgUrl ? Colors.purple : Colors.black
+                )
+              ),
             ),
           ],
         ),

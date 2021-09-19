@@ -22,8 +22,19 @@ class HireProfessionalPage extends StatefulWidget {
 class _HireProfessionalPageState extends State<HireProfessionalPage> {
 
   DatabaseService databaseMethods = DatabaseService();
-
   Razorpay razorpay;    
+
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+
+  void _showScaffold(String message) {
+    _scaffoldKey.currentState.showSnackBar(
+      SnackBar(
+        backgroundColor: Colors.blueAccent,
+        duration: Duration(milliseconds: 1500),
+        content: Text(message, textAlign: TextAlign.center, style: TextStyle(fontSize: 17.0,fontFamily:"SF Pro")),
+      )
+    );
+  }
 
   getChatRoomId(String a, String b) {
     if(a.substring(0, 1).codeUnitAt(0) > b.substring(0, 1).codeUnitAt(0)) {
@@ -52,7 +63,7 @@ class _HireProfessionalPageState extends State<HireProfessionalPage> {
     //   textColor: Colors.black,
     //   fontSize: 16,
     //   backgroundColor: Colors.grey[300]      
-    // );
+    // );    
 
     Future.delayed(Duration(seconds: 2), () {
       // directing to private chat room
@@ -198,8 +209,9 @@ class _HireProfessionalPageState extends State<HireProfessionalPage> {
                         width: MediaQuery.of(context).size.width - 64,
                         height: 55,
                         child: MaterialButton(
-                          onPressed: () {
-                            openCheckout();
+                          onPressed: () async {
+                            await openCheckout();
+                            _showScaffold('Payment is Successful! Directing to Chat');
                           },
                           color: Colors.black,
                           elevation: 0,
