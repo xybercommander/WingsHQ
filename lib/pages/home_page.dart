@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
       _userName = value;
     });
     _user = await FirebaseAuth.instance.currentUser();
-  }
+  }  
 
   @override
   void initState() {    
@@ -69,7 +69,8 @@ class _HomePageState extends State<HomePage> {
                           return HomePageGroupTile(
                             groupId: snapshot.data.documents[index]['groupId'],
                             groupName: snapshot.data.documents[index]['groupName'],
-                            admin: snapshot.data.documents[index]['admin'],
+                            groupDescription: snapshot.data.documents[index]['groupDescription'],
+                            admin: snapshot.data.documents[index]['admin'],                            
                             userName: _userName,
                             user: _user,
                           );

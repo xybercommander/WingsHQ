@@ -1,4 +1,6 @@
 // @dart=2.9
+// ignore_for_file: prefer_const_constructors
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:wings_hq/helper/helper_functions.dart';
@@ -18,6 +20,7 @@ class _GroupsPageState extends State<GroupsPage> {
   final AuthService _auth = AuthService();
   FirebaseUser _user;
   String _groupName;
+  String _groupDescription = '';
   String _userName = '';
   String _email = '';
   Stream _groups;
@@ -140,7 +143,7 @@ class _GroupsPageState extends State<GroupsPage> {
       onPressed:  () async {
         if(_groupName != null) {
           await HelperFunctions.getUserNameSharedPreference().then((val) {
-            DatabaseService(uid: _user.uid).createGroup(val, _groupName);
+            DatabaseService(uid: _user.uid).createGroup(val, _groupName, _groupDescription);
           });
           Navigator.of(context).pop();
         }
@@ -148,16 +151,44 @@ class _GroupsPageState extends State<GroupsPage> {
     );
 
     AlertDialog alert = AlertDialog(
-      title: Text("Create a group"),
-      content: TextField(
-        onChanged: (val) {
-          _groupName = val;
-        },
-        style: TextStyle(
-          fontSize: 15.0,
-          height: 2.0,
-          color: Colors.black             
-        )
+      title: Text("Create a group and give a one liner description"),
+      content: Container(
+        height: 300,
+        child: Column(
+          children: [
+            TextField(
+              onChanged: (val) {
+                _groupName = val;
+              },
+              decoration: InputDecoration(
+                hintText: 'Group Name',
+                hintStyle: TextStyle(color: Colors.grey[700])
+              ),
+              style: TextStyle(
+                fontSize: 15.0,
+                height: 2.0,
+                color: Colors.black             
+              )
+            ),
+            TextField(
+              onChanged: (val) {
+                _groupDescription = val;
+              },    
+              keyboardType: TextInputType.multiline,          
+              maxLength: 50,
+              maxLines: null,
+              decoration: InputDecoration(
+                hintText: 'Group Description',
+                hintStyle: TextStyle(color: Colors.grey[700]),                
+              ),
+              style: TextStyle(
+                fontSize: 15.0,
+                height: 2.0,
+                color: Colors.black             
+              )
+            ),
+          ],
+        ),
       ),
       actions: [
         cancelButton,
@@ -192,7 +223,7 @@ class _GroupsPageState extends State<GroupsPage> {
           _popupDialog(context);
         },
         child: Icon(Icons.add, color: Colors.black, size: 30.0),
-        backgroundColor: Colors.grey[200],
+        backgroundColor: Colors.grey[300],
         elevation: 0.0,
       ),
     );

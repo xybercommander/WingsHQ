@@ -1,4 +1,6 @@
 // @dart=2.9
+// ignore_for_file: prefer_const_constructors
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:wings_hq/pages/chat_page.dart';
@@ -7,11 +9,12 @@ import 'package:wings_hq/services/database_service.dart';
 class HomePageGroupTile extends StatefulWidget {
   final String groupId;
   final String groupName;
+  final String groupDescription;
   final String admin;
   final String userName;
   final FirebaseUser user;
 
-  HomePageGroupTile({this.groupId, this.groupName, this.admin, this.userName, this.user});
+  HomePageGroupTile({this.groupId, this.groupName, this.admin, this.userName, this.user, this.groupDescription});
 
   @override
   State<HomePageGroupTile> createState() => _HomePageGroupTileState();
@@ -83,17 +86,20 @@ class _HomePageGroupTileState extends State<HomePageGroupTile> {
                   child: Text(widget.groupName.substring(0, 1).toUpperCase(), textAlign: TextAlign.center, style: TextStyle(color: Colors.grey[800], fontSize: 24)),
                 ),
                 InkWell(
-                  onTap: () async {
+                  onTap: () async {                    
                     await DatabaseService(uid: widget.user.uid).togglingGroupJoin(widget.groupId, widget.groupName, widget.userName);
+                    await _joinValueInGroup(widget.userName, widget.groupId, widget.groupName, widget.admin);
+                    print('CHECK THIS ---> ' + _isJoined.toString());
                     if(_isJoined) {
-                      setState(() {
-                        _isJoined = !_isJoined;
-                      });
+                      // setState(() {                        
+                      //   _isJoined = !_isJoined;
+                      // });
                       // await DatabaseService(uid: user.uid).userJoinGroup(groupId, groupName, userName);
                       // _showScaffold('Successfully joined the group "${widget.groupName}"');
-                      Future.delayed(Duration(milliseconds: 2000), () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => ChatPage(groupId: widget.groupId, userName: widget.userName, groupName: widget.groupName)));
-                      });
+                      // Future.delayed(Duration(milliseconds: 2000), () {
+                        
+                      // });
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => ChatPage(groupId: widget.groupId, userName: widget.userName, groupName: widget.groupName)));
                     }
                     else {
                       setState(() {
@@ -130,7 +136,7 @@ class _HomePageGroupTileState extends State<HomePageGroupTile> {
             Text(widget.groupName, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 22)),
             SizedBox(height: 2,),
             Text(
-              "Lorem ipsum dolor sit amet, consectetur adipiscing.", 
+              widget.groupDescription ?? '', 
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(fontSize: 16.0,fontFamily:"SF Pro", color: Colors.black)
