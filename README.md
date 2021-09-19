@@ -71,7 +71,7 @@ WingsHQ is a mobile Application made using Flutter to create a community driven 
    :point_right: Healthcare Professional Page- A separate page has been introduced which shows a user the list of professional doctors and surgeons who are available and can help them with professional advice. <br/>
     <ul>:point_right:  Timeline Page- The Home Page/Timeline Page of the app is divided into two sections
        <li> New Groups- This container fetches all the newly formed groups and adds that to the listview using horizontal scroll<br/>
-       <li> Health News- The Health News Section cooperates with gnews.io (public api) api to fetch and gather all the health related news and shows that to the user. A "see more" feature is also added to <br/>
+       <li> Health News- The Health News Section cooperates with gnews.io (public api) api to fetch and gather all the health related news and shows that to the user. A "see more" feature is also added for further expansion of the news in a browser <br/>
   
    </ul>
      
