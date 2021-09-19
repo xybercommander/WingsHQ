@@ -93,148 +93,148 @@ class _HomePageState extends State<HomePage> {
             ),
             Expanded(
               flex: 2,
-              // child: FutureBuilder<List>(
-              //   future: HealthNewsApi().getHealthNews(),
-              //   builder: (context, snapshot) {
-              //     if(snapshot.hasData) {
-              //       // print(snapshot);
-              //       return ListView.builder(
-              //         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-              //         physics: BouncingScrollPhysics(),
-              //         itemCount: 10,
-              //         itemBuilder: (context, index) {
-              //           return Container(
-              //             margin: EdgeInsets.symmetric(vertical: 8),
-              //             height: 220,
-              //             width: 200,
-              //             decoration: BoxDecoration(
-              //               image: DecorationImage(
-              //                 image: NetworkImage(snapshot.data[index]['image']),
-              //                 fit: BoxFit.cover
-              //               ),
-              //               borderRadius: BorderRadius.circular(15)
-              //             ),
-              //             child: Container(
-              //               padding: EdgeInsets.all(16),
-              //               height: 300,
-              //               width: 200,
-              //               decoration: BoxDecoration(
-              //                 gradient: LinearGradient(
-              //                   colors: [
-              //                     Colors.transparent,
-              //                     Colors.black
-              //                   ],
-              //                   begin: Alignment.topCenter,
-              //                   end: Alignment.bottomCenter
-              //                 ),
-              //                 borderRadius: BorderRadius.circular(15)
-              //               ),
-              //               child: Column(
-              //                 mainAxisAlignment: MainAxisAlignment.end,
-              //                 crossAxisAlignment: CrossAxisAlignment.start,
-              //                 children: [
-              //                   Text(
-              //                     snapshot.data[index]['title'],
-              //                     style: TextStyle(color: Colors.white, fontSize: 18),
-              //                   ),
-              //                   SizedBox(height: 4,),                                
-              //                   Row(
-              //                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //                     crossAxisAlignment: CrossAxisAlignment.center,
-              //                     children: [
-              //                       Text(
-              //                         'Source: ${snapshot.data[index]['source']['name']}',
-              //                         style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
-              //                       ),
-              //                       GestureDetector(
-              //                         onTap: () {
-              //                           launch(snapshot.data[index]['url']);
-              //                         },
-              //                         child: Text(
-              //                           'See more',
-              //                           style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
-              //                         ),
-              //                       ),
-              //                     ],
-              //                   ),
-              //                 ],
-              //               ),
-              //             ),
-              //           );
-              //         },
-              //       );
-              //     } else {
-              //       return Center(
-              //         child: CircularProgressIndicator(),
-              //       );
-              //     }
-              //   },
-              // ),
-              child: ListView.builder(
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                physics: BouncingScrollPhysics(),
-                itemCount: 10,
-                itemBuilder: (context, index) {
-                  return Container(
-                    margin: EdgeInsets.symmetric(vertical: 8),
-                    height: 220,
-                    width: 200,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage('https://mediaproxy.salon.com/width/1200/https://media.salon.com/2021/09/gettyimages-1232223062.jpg'),
-                        fit: BoxFit.cover
-                      ),
-                      borderRadius: BorderRadius.circular(15)
-                    ),
-                    child: Container(
-                      padding: EdgeInsets.all(16),
-                      height: 300,
-                      width: 200,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(                          
-                          colors: [
-                            Colors.transparent,
-                            Colors.black
-                          ],
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter
-                        ),
-                        borderRadius: BorderRadius.circular(15)
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,                        
-                        children: [
-                          Text(
-                            'Georgia Gov. Brian Kemp keeps mentioning failed AIDS vaccine mandates. But there is no AIDS vaccine',
-                            style: TextStyle(color: Colors.white, fontSize: 18),
+              child: FutureBuilder<List>(
+                future: HealthNewsApi().getHealthNews(),
+                builder: (context, snapshot) {
+                  if(snapshot.hasData) {
+                    // print(snapshot);
+                    return ListView.builder(
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      physics: BouncingScrollPhysics(),
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin: EdgeInsets.symmetric(vertical: 8),
+                          height: 220,
+                          width: 200,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(snapshot.data[index]['image']),
+                              fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(15)
                           ),
-                          SizedBox(height: 4,),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Text(
-                                'Source: Salon',
-                                style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
+                          child: Container(
+                            padding: EdgeInsets.all(16),
+                            height: 300,
+                            width: 200,
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                colors: [
+                                  Colors.transparent,
+                                  Colors.black
+                                ],
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter
                               ),
-                              GestureDetector(
-                                onTap: () {
-                                  print('Redirect');
-                                },
-                                child: Text(
-                                  'See more',
-                                  style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                              borderRadius: BorderRadius.circular(15)
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  snapshot.data[index]['title'],
+                                  style: TextStyle(color: Colors.white, fontSize: 18),
                                 ),
-                              ),
-                            ],
+                                SizedBox(height: 4,),                                
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'Source: ${snapshot.data[index]['source']['name']}',
+                                      style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
+                                    ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        launch(snapshot.data[index]['url']);
+                                      },
+                                      child: Text(
+                                        'See more',
+                                        style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                        ],
-                      ),
-                    ),
-                  );
+                        );
+                      },
+                    );
+                  } else {
+                    return Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  }
                 },
               ),
+              // child: ListView.builder(
+              //   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              //   physics: BouncingScrollPhysics(),
+              //   itemCount: 10,
+              //   itemBuilder: (context, index) {
+              //     return Container(
+              //       margin: EdgeInsets.symmetric(vertical: 8),
+              //       height: 220,
+              //       width: 200,
+              //       decoration: BoxDecoration(
+              //         image: DecorationImage(
+              //           image: NetworkImage('https://mediaproxy.salon.com/width/1200/https://media.salon.com/2021/09/gettyimages-1232223062.jpg'),
+              //           fit: BoxFit.cover
+              //         ),
+              //         borderRadius: BorderRadius.circular(15)
+              //       ),
+              //       child: Container(
+              //         padding: EdgeInsets.all(16),
+              //         height: 300,
+              //         width: 200,
+              //         decoration: BoxDecoration(
+              //           gradient: LinearGradient(                          
+              //             colors: [
+              //               Colors.transparent,
+              //               Colors.black
+              //             ],
+              //             begin: Alignment.topCenter,
+              //             end: Alignment.bottomCenter
+              //           ),
+              //           borderRadius: BorderRadius.circular(15)
+              //         ),
+              //         child: Column(
+              //           mainAxisAlignment: MainAxisAlignment.end,
+              //           crossAxisAlignment: CrossAxisAlignment.start,                        
+              //           children: [
+              //             Text(
+              //               'Georgia Gov. Brian Kemp keeps mentioning failed AIDS vaccine mandates. But there is no AIDS vaccine',
+              //               style: TextStyle(color: Colors.white, fontSize: 18),
+              //             ),
+              //             SizedBox(height: 4,),
+              //             Row(
+              //               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //               crossAxisAlignment: CrossAxisAlignment.center,
+              //               children: [
+              //                 Text(
+              //                   'Source: Salon',
+              //                   style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
+              //                 ),
+              //                 GestureDetector(
+              //                   onTap: () {
+              //                     print('Redirect');
+              //                   },
+              //                   child: Text(
+              //                     'See more',
+              //                     style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+              //                   ),
+              //                 ),
+              //               ],
+              //             ),
+              //           ],
+              //         ),
+              //       ),
+              //     );
+              //   },
+              // ),
             )
           ],
         ),
