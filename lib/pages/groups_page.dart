@@ -1,12 +1,10 @@
+// @dart=2.9
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:hackmit/helper/helper_functions.dart';
-import 'package:hackmit/pages/authenticate_page.dart';
-import 'package:hackmit/pages/profile_page.dart';
-import 'package:hackmit/pages/search_page.dart';
-import 'package:hackmit/services/auth_service.dart';
-import 'package:hackmit/services/database_service.dart';
-import 'package:hackmit/widgets/group_tile.dart';
+import 'package:wings_hq/helper/helper_functions.dart';
+import 'package:wings_hq/services/auth_service.dart';
+import 'package:wings_hq/services/database_service.dart';
+import 'package:wings_hq/widgets/group_tile.dart';
 
 class GroupsPage extends StatefulWidget {
   const GroupsPage({ Key key }) : super(key: key);

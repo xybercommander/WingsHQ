@@ -1,10 +1,11 @@
+// @dart=2.9
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:encrypt/encrypt.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:hackmit/services/database_service.dart';
-import 'package:hackmit/shared/encryption_constants.dart';
-import 'package:hackmit/widgets/message_tile.dart';
+import 'package:wings_hq/services/database_service.dart';
+import 'package:wings_hq/shared/encryption_constants.dart';
+import 'package:wings_hq/widgets/message_tile.dart';
 
 class ChatPage extends StatefulWidget {
 

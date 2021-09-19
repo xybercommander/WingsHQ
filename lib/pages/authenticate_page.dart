@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hackmit/pages/register_page.dart';
-import 'package:hackmit/pages/signin_page.dart';
+import 'package:wings_hq/pages/register_page.dart';
+import 'package:wings_hq/pages/signin_page.dart';
 
 class AuthenticatePage extends StatefulWidget {
   @override
