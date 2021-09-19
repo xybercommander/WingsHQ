@@ -1,6 +1,10 @@
 <h1 align="center"><img width=50% height=50% alt="WingsHQ" src="https://user-images.githubusercontent.com/71402528/133916079-1e9efcca-c8dd-4620-aa1a-73759aa61531.png"></h1>
 <h1 align="center">Flying towards a more connected future</h1>
 
+<p align="center"><img width=70% height=70% alt="WingsHQ" src="https://user-images.githubusercontent.com/38849650/133920771-b91f9449-5329-4f84-b243-9444c50bb121.gif"></p>
+<!-- ![Phone-screens-remix-1-unscreen](https://user-images.githubusercontent.com/38849650/133920771-b91f9449-5329-4f84-b243-9444c50bb121.gif) -->
+
+
 <!--[![All Contributors](https://img.shields.io/badge/all_contributors-04-orange.svg?style=flat-square)](#contributors-)-->
 <br><br>
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
