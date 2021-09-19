@@ -1,11 +1,9 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:hackmit/helper/helper_functions.dart';
-import 'package:hackmit/helper/history.dart';
-import 'package:hackmit/pages/authenticate_page.dart';
-import 'package:hackmit/pages/home_page.dart';
-import 'package:hackmit/pages/navigation_page.dart';
+import 'package:wings_hq/helper/helper_functions.dart';
+import 'package:wings_hq/helper/history.dart';
+import 'package:wings_hq/pages/authenticate_page.dart';
+import 'package:wings_hq/pages/navigation_page.dart';
 
 class SplashScreen extends StatefulWidget {
   //SplashScreen({Key? key}) : super(key: key);

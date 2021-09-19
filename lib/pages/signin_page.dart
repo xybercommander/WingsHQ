@@ -1,14 +1,14 @@
+// @dart=2.9
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:hackmit/helper/helper_functions.dart';
-import 'package:hackmit/pages/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:hackmit/pages/navigation_page.dart';
-import 'package:hackmit/services/auth_service.dart';
-import 'package:hackmit/services/database_service.dart';
-import 'package:hackmit/shared/constants.dart';
-import 'package:hackmit/shared/loading.dart';
+import 'package:wings_hq/helper/helper_functions.dart';
+import 'package:wings_hq/pages/navigation_page.dart';
+import 'package:wings_hq/services/auth_service.dart';
+import 'package:wings_hq/services/database_service.dart';
+import 'package:wings_hq/shared/constants.dart';
+import 'package:wings_hq/shared/loading.dart';
 
 class SignInPage extends StatefulWidget {
   final Function toggleView;
